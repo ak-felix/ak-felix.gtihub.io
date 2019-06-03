@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
+<head>
+        <meta charset="utf-8" />
+        <title>felix._.ak</title>
+        <style>
+        header {
+          border-width: 0px;
+          background-color: white;
+        }
+        body {
+                font-family: Helvetica, Arial, sans-serif;
+                background-color: white;
+        }
+        h1 {
+                font-size: 20px;
+        }
+        section {
+                border-style: solid;
+                border-width: 2px;
+                border-color: white;
+        }
+        a img {
+          border-style: solid;
+          border-width: 2px;
+          border-color: grey;
+          width: 20;
+          height: 20;
+        }
+        p {
+          font-size: 16px;
+        }
+
+        </style>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+  <header align="center">
+    <img src="images/messi.jpg" alt="messi" />
+  </header>
+  <div>
+    <p/>
+    <table width="100%">
+      <tr width="100%">
+        <td width="33%" align="right"></td>
+        <td width="33%" align="center">
+          <p>
+            <h1>WHITE HAT</h1>
+            {{ projectDescription }}
+          </p>
+          <br/>
+        </td>
+        <td width="33%"/>
+      </tr>
+    </table>
+    <div align="center">
+    <a href="{{ project1Url }}"><img src="images/windows.jpg" hspace="10" width="200" height="200" alt="windows" /></a>
+    <a href="{{ project2Url }}"><img src="images/linux.jpg" hspace="10" width="200" height="200" alt="linux" /></a>
+    <a href="{{ project3Url }}"><img src="images/mac.jpg" hspace="10" width="200" height="200" alt="mac" /></a>
+    </div>
+    <p/><p/>
+  <p/>
+  <p/>
+  <div>
+    <table width="100%">
+      <tr>
+        <td width="33%" align="right"></td>
+        <td width="33%">
+          <p align="center">
+            <img src="images/felix.jpg" border="1" alt="felix" />
+          </p>
+        </td>
+        <td width="33%"/>
+      </tr>
+      <tr width="100%">
+        <td width="33%" align="right"></td>
+        <td width="33%">
+          <p align="center">
+            {{ bioSummary }}
+          </p>
+        </td>
+        <td width="33%"/>
+      </tr>
+    </table>
+
+    <table width="100%">
+      <tr>
+        <td align="center">
+          <p>
+            <a href="https://github.com/{{ githubUserId }}"><img src="images/github-icon.png" height="50" width="50" alt="github"/></a>
+            <a href="https://www.linkedin.com/in/{{ linkedinUserId }}"><img src="images/linkedin.jpg" height="50" width="50" alt="linkedin"/></a>
+			<a href="https://www.instagram.com/{{ instagramUserId }}"><img src="images/instagram.jpg" height="50" width="50" alt="instagram"/></a>
+			<a href="https://www.facebook.com/{{ facebookUserId }}"><img src="images/facebook.jpg" height="50" width="50" alt="facebook"/></a>
+			<a href="https://www.youtube.com/{{ youtubeUserId }}"><img src="images/youtube.jpg" height="50" width="50" alt="youtube"/></a>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <p/><p/>
+  </div>
+  </div>
+
+</body>
+</html>
